@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="assets/css/styles.css" rel="stylesheet">
 
     <title>Responsive Navbar</title>
 </head>
@@ -17,7 +18,7 @@
         <div class="col-span-1">
             <a href="#" class="text-xl font-semibold text-gray-800">Logo</a>
         </div>
-
+    
         <!-- Menu Burger -->
         <div class="col-span-2 text-right md:col-span-1">
             <button id="burgerBtn" class="md:hidden focus:outline-none">
@@ -28,17 +29,18 @@
                 </svg>
             </button>
         </div>
-
+    
         <!-- Menu Items -->
         <div id="menuItems"
-            class="hidden col-span-3 md:col-span-1 md:grid md:grid-cols-5 md:grid-rows-none md:place-items-end text-right">
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end">Home</a>
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end">About</a>
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end">Services</a>
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end">Pricing</a>
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end">Contact</a>
+        class="hidden col-span-3 md:col-span-1 md:grid md:grid-cols-4 md:grid-rows-none md:place-items-end text-right md:pr-4 lg:pr-8 md:gap-5">
+            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Accueil</a>
+            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Actualité</a>
+            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Services</a>
+            <!-- <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Pricing</a> -->
+            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Contact</a>
         </div>
     </nav>
+    
 
     <!-- Section avec texte et bouton -->
     <section class="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-1 gap-8 text-center md:text-center">
