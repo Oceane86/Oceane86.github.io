@@ -2,9 +2,11 @@
     /* Adjust styles for tablets and larger screens in landscape mode */
     #menuItems {
         display: grid;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
         grid-template-rows: none;
         place-items: end;
-        gap: 1rem;
+        gap: 4rem;
     }
+
+
 }
