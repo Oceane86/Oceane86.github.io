@@ -5,6 +5,5 @@
         grid-template-columns: repeat(4, auto);
         grid-template-rows: none;
         place-items: end;
-        gap: 4rem;
     }
 }
