@@ -36,3 +36,20 @@ const addTestimonial = () => {
   // Vous pouvez mettre en œuvre la logique pour ajouter un témoignage ici
   // par exemple, en utilisant un formulaire.
 };
+
+
+
+function toggleMenu() {
+    var menu = document.getElementById('menuItems');
+    var burgerIcon = document.querySelector('.block.w-5');
+
+    if (!open) {
+        menu.classList.remove('hidden');
+        burgerIcon.classList.add('rotate-45', '-translate-y-1.5');
+    } else {
+        menu.classList.add('hidden');
+        burgerIcon.classList.remove('rotate-45', '-translate-y-1.5');
+    }
+
+    open = !open;
+}

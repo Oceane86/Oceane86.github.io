@@ -1,166 +1,89 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link href="assets/css/styles.css" rel="stylesheet">
+  <title>Website menu 08</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="..." crossorigin="anonymous">
 
-    <title>RIAL</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="bg-gray-100">
 
-    <nav class="bg-white p-4 grid grid-cols-3 gap-4">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 text-white p-4 fixed w-full">
+    <div class="container mx-auto grid grid-cols-3 items-center">
+      
         <!-- Logo -->
-        <div class="col-span-1">
-            <a href="#" class="text-xl font-semibold text-gray-800">Logo</a>
-        </div>
-    
-        <!-- Menu Burger -->
-        <div class="col-span-2 text-right md:col-span-1">
-            <button id="burgerBtn" class="md:hidden focus:outline-none">
-                <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
-                </svg>
-            </button>
-        </div>
-    
-        <!-- Menu Items -->
-        <div id="menuItems"
-        class="hidden col-span-3 md:col-span-1 md:grid md:grid-cols-4 md:grid-rows-none md:place-items-end text-right md:pr-4 lg:pr-8 md:gap-5">
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Accueil</a>
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Actualité</a>
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Services</a>
-            <!-- <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Pricing</a> -->
-            <a href="#" class="text-gray-800 hover:text-blue-500 py-2 block self-end md:mb-2">Contact</a>
-        </div>
-    </nav>
+<div class="text-lg font-bold col-span-1">
+    <a href="#" class="inline-block lg:hidden">Company Logo</a>
+  </div>
+  
+
+     <!-- Menu (visible sur les écrans larges) -->
+     <div class="hidden lg:grid lg:grid-cols-7 gap-4 col-span-7">
 
 
+    <a href="#" class="text-white p-4 bg-gray-800">Evènements</a>
+    <a href="#" class="text-white p-4 bg-gray-800">Articles</a>
+    <a href="#" class="text-white p-4 bg-gray-800">Témoignages</a>
+    <figure class="grid place-items-center">
+      <img src="assets/medias/rial_logo.png" alt="Company Logo">
+      <a href="#"></a>
+    </figure>
+    <a href="#" class="text-white p-4 bg-gray-800">Podcasts</a>
+    <a href="#" class="text-white p-4 bg-gray-800">Communauté</a>
+    <a href="#" class="text-white p-4 bg-gray-800">Devenir bénévole</a>
+  </div>
+  
 
-    <!-- Section avec texte et bouton -->
-    <section class="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-1 gap-8 text-center md:text-center">
-        <!-- Texte -->
-        <div class="md:w-1/2 mx-auto">
-            <h2 class="text-3xl font-semibold mb-4">Bienvenue dans notre campagne de sensibilisation sur la dépendance
-                émotionnelle à l'IA.</h2>
-            <p class="text-gray-600">Aujourd'hui, l'intelligence artificielle fait partie intégrante de nos vies, mais
-                comment cela affecte-t-il nos émotions ? Rejoignez-nous pour explorer ce sujet crucial et construire une
-                communauté de soutien.</p>
-        </div>
 
-        <!-- Bouton -->
-        <div>
-            <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Rejoindre</button>
-        </div>
-    </section>
+     <!-- Bouton du Menu Burger (version mobile) -->
+<div class="text-right col-span-2 lg:hidden lg:inline-block">
+    <button id="burger-menu" class="text-white focus:outline-none">
+      <svg class="h-6 w-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+  
 
-    <section class="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-1 gap-8 text-center md:text-center">
-        <!-- Titre -->
-        <h2 class="text-3xl font-semibold mb-4">Rejoignez-nous maintenant</h2>
-
-        <!-- Accessible label -->
-        <p id="association-label">Description of the image</p>
-
-        <!-- Image -->
-        <figure>
-            <img src="assets/medias/img.png" alt="Image" aria-labelledby="association-label"
-                class="w-full md:w-1/2 mx-auto rounded-md mb-4" title="association">
-            <figcaption>
-                A T-Rex on display in the Manchester University Museum.
-            </figcaption>
-        </figure>
-
-        <!-- Bouton -->
-        <div>
-            <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Rejoindre</button>
+      <div id="mobile-menu" class="lg:hidden hidden bg-gray-800 text-white fixed w-full h-screen top-12 left-0 overflow-hidden">
+        <div class="p-4">
+          <a href="#" class="block mb-4">Accueil</a>
+          <a href="#" class="block mb-4">Evènements</a>
+          <a href="#" class="block mb-4">Rejoindre la communauté</a>
+          <a href="#" class="block mb-4">Articles</a>
+          <a href="#" class="block mb-4">Témoignages</a>
+          <a href="#" class="block mb-4">Podcasts</a>
+          <a href="#" class="block mb-4">Devenir bénévole</a>
+          <div class="container mx-auto text-right">
+            <img src="assets/medias/Marni_4.png" alt="Description of the image" class="w-2/3 mx-auto custom-image rounded-lg mr-4">
+          </div>
         </div>
 
-    </section>
-
-
-    <div class="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-1 gap-8 text-center md:text-center">
-        <!-- Texte -->
-        <div class="md:w-1/2 mx-auto">
-            <article>
-                <h3 class="text-3xl font-semibold mb-4">Nos actualités</h3>
-                <p class="text-gray-600">Découvrez des ressources supplémentaires pour approfondir vos connaissances et
-                    trouver de l'aide. Nous sommes là pour vous accompagner dans votre parcours vers une relation plus
-                    saine avec l'IA</p>
-            </article>
-        </div>
-
-        <!-- Bouton -->
-        <div>
-            <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Rejoindre</button>
-        </div>
+     
     </div>
+  </nav>
 
-    <section class="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-1 gap-8 text-center md:text-center">
-        <!-- Texte -->
-        <div class="md:w-1/2 mx-auto">
-            <h3 class="text-3xl font-semibold mb-4">Nos évènements</h3>
-            <p class="text-gray-600">Découvrez nos évènements, on propose des réunions etc...</p>
-        </div>
+  
 
-        <!-- Bouton -->
-        <div>
-            <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Voir le planning...</button>
-        </div>
-    </section>
+  <!-- Your Content Goes Here -->
 
-    <section class="max-w-screen-xl mx-auto p-8 text-center">
-        <!-- Texte -->
-        <h5 class="text-xl text-gray-800">Découvrez les histoires réelles de personnes qui ont ressenti une dépendance
-            émotionnelle à l'IA. Ces témoignages puissants montrent que la dépendance à la technologie n'est pas
-            seulement une abstraction, mais une réalité que beaucoup vivent au quotidien.</h5>
-    </section>
-
-
-    <!-- Carrousel d'avis -->
-    <div class="max-w-screen-xl mx-auto p-8 grid grid-cols-1 md:grid-cols-1 gap-8 text-center md:text-center">
-        <!-- Contrôles du carrousel -->
-        <div class="grid grid-cols-5 justify-items-center items-center">
-            <button onclick="prevSlide()" class="text-black focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-
-            <!-- Message d'avis -->
-            <div id="testimonial" class="col-span-3 col-start-2 bg-white p-4 rounded shadow">
-                <p><em>“je suis sauvé depuis que j’ai rejoins la communauté etc...”</em></p>
-            </div>
-
-            <button onclick="nextSlide()" class="text-black focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Bouton pour voir tous les témoignages -->
-        <div class="grid justify-center mt-4">
-            <button onclick="viewAll()" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Voir tous les
-                témoignages</button>
-        </div>
-
-        <!-- Bouton pour ajouter un avis -->
-        <div class="grid justify-center mt-4">
-            <button onclick="addTestimonial()"
-                class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Ajouter un avis</button>
-        </div>
-    </div>
-
-    <script src="assets/js/script.js"></script>
-
+  <script>
+    document.getElementById('burger-menu').addEventListener('click', function () {
+      var mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+      var menuIcon = document.querySelector('.menu-icon');
+      menuIcon.innerHTML = (mobileMenu.classList.contains('hidden')) ?
+        '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>' :
+        '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+    });
+  </script>
 </body>
 
 </html>
