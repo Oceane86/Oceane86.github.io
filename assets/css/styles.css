@@ -1,3 +1,7 @@
 .custom-image {
     margin-top: -4rem;
   }
+
+img.w-2\/3.mx-auto.custom-image.rounded-lg.mr-4 {
+    MARGIN-TOP: -4rem;
+}
