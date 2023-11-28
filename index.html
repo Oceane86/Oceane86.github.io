@@ -1,89 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <title>Website menu 08</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="..." crossorigin="anonymous">
+    <title>RIAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="..." crossorigin="anonymous">
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-gray-100">
 
-  <!-- Navbar -->
-  <nav class="bg-gray-800 text-white p-4 fixed w-full">
-    <div class="container mx-auto grid grid-cols-3 items-center">
-      
-        <!-- Logo -->
-<div class="text-lg font-bold col-span-1">
-    <a href="#" class="inline-block lg:hidden">Company Logo</a>
-  </div>
-  
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 fixed w-full">
+        <div class="container mx-auto grid grid-cols-3 items-center">
 
-     <!-- Menu (visible sur les écrans larges) -->
-     <div class="hidden lg:grid lg:grid-cols-7 gap-4 col-span-7">
+            <!-- Logo -->
+            <div class="text-lg font-bold col-span-1">
+                <a href="#" class="inline-block lg:hidden">Company Logo</a>
+            </div>
 
 
-    <a href="#" class="text-white p-4 bg-gray-800">Evènements</a>
-    <a href="#" class="text-white p-4 bg-gray-800">Articles</a>
-    <a href="#" class="text-white p-4 bg-gray-800">Témoignages</a>
-    <figure class="grid place-items-center">
-      <img src="assets/medias/rial_logo.png" alt="Company Logo">
-      <a href="#"></a>
-    </figure>
-    <a href="#" class="text-white p-4 bg-gray-800">Podcasts</a>
-    <a href="#" class="text-white p-4 bg-gray-800">Communauté</a>
-    <a href="#" class="text-white p-4 bg-gray-800">Devenir bénévole</a>
-  </div>
-  
+            <!-- Menu (visible sur les écrans larges) -->
+            <div class="hidden lg:grid lg:grid-cols-7 gap-4 col-span-7">
 
 
-     <!-- Bouton du Menu Burger (version mobile) -->
-<div class="text-right col-span-2 lg:hidden lg:inline-block">
-    <button id="burger-menu" class="text-white focus:outline-none">
-      <svg class="h-6 w-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-      </svg>
-    </button>
-  </div>
-  
+                <a href="#" class="text-white p-4 bg-gray-800">Evènements</a>
+                <a href="#" class="text-white p-4 bg-gray-800">Articles</a>
+                <a href="#" class="text-white p-4 bg-gray-800">Témoignages</a>
+                <figure class="grid place-items-center">
+                    <img src="assets/medias/rial_logo.png" alt="Company Logo">
+                    <a href="#"></a>
+                </figure>
+                <a href="#" class="text-white p-4 bg-gray-800">Podcasts</a>
+                <a href="#" class="text-white p-4 bg-gray-800">Communauté</a>
+                <a href="#" class="text-white p-4 bg-gray-800">Devenir bénévole</a>
+            </div>
 
-      <div id="mobile-menu" class="lg:hidden hidden bg-gray-800 text-white fixed w-full h-screen top-12 left-0 overflow-hidden">
-        <div class="p-4">
-          <a href="#" class="block mb-4">Accueil</a>
-          <a href="#" class="block mb-4">Evènements</a>
-          <a href="#" class="block mb-4">Rejoindre la communauté</a>
-          <a href="#" class="block mb-4">Articles</a>
-          <a href="#" class="block mb-4">Témoignages</a>
-          <a href="#" class="block mb-4">Podcasts</a>
-          <a href="#" class="block mb-4">Devenir bénévole</a>
-          <div class="container mx-auto text-right">
-            <img src="assets/medias/Marni_4.png" alt="Description of the image" class="w-2/3 mx-auto custom-image rounded-lg mr-4">
-          </div>
-        </div>
 
-     
-    </div>
-  </nav>
 
-  
+            <!-- Bouton du Menu Burger (version mobile) -->
+            <div class="text-right col-span-2 lg:hidden lg:inline-block">
+                <button id="burger-menu" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
 
-  <!-- Your Content Goes Here -->
 
-  <script>
-    document.getElementById('burger-menu').addEventListener('click', function () {
-      var mobileMenu = document.getElementById('mobile-menu');
-      mobileMenu.classList.toggle('hidden');
-      var menuIcon = document.querySelector('.menu-icon');
-      menuIcon.innerHTML = (mobileMenu.classList.contains('hidden')) ?
-        '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>' :
-        '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
-    });
-  </script>
+            <div id="mobile-menu"
+                class="lg:hidden hidden bg-gray-800 text-white fixed w-full h-screen top-12 left-0 overflow-hidden">
+                <div class="p-4">
+                    <a href="#" class="block mb-4">Accueil</a>
+                    <a href="#" class="block mb-4">Evènements</a>
+                    <a href="#" class="block mb-4">Rejoindre la communauté</a>
+                    <a href="#" class="block mb-4">Articles</a>
+                    <a href="#" class="block mb-4">Témoignages</a>
+                    <a href="#" class="block mb-4">Podcasts</a>
+                    <a href="#" class="block mb-4">Devenir bénévole</a>
+                    <div class="container mx-auto text-right">
+                        <img src="assets/medias/Marni_4.png" alt="Description of the image"
+                            class="w-2/3 mx-auto custom-image rounded-lg mr-4">
+                    </div>
+                </div>
+
+
+            </div>
+    </nav>
+
+
+
+    <!-- Your Content Goes Here -->
+
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+            var menuIcon = document.querySelector('.menu-icon');
+            menuIcon.innerHTML = (mobileMenu.classList.contains('hidden')) ?
+                '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>' :
+                '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+        });
+    </script>
 </body>
 
 </html>
