@@ -17,13 +17,19 @@
 <body class="bg-gray-100">
 
     <!-- Navbar -->
-    <nav class="bg-F1F0F8 text-white p-4 fixed w-full">
+    <nav class="text-white p-4 fixed w-full">
         <div class="container mx-auto grid grid-cols-3 items-center">
 
             <!-- Logo -->
+           
             <div class="text-lg font-bold col-span-1">
-                <a href="#" class="inline-block lg:hidden">Company Logo</a>
+                <a href="#" class="inline-block lg:hidden">
+                    <figure>
+                        <img src="assets/medias/rial_logo.png" alt="Company Logo" class="w-17 h-16">
+                    </figure>
+                </a>
             </div>
+
 
 
             <!-- Menu (visible sur les écrans larges) -->
@@ -45,7 +51,7 @@
 
 
             <!-- Bouton du Menu Burger (version mobile) -->
-            <div class="text-right col-span-2 lg:hidden lg:inline-block">
+            <div class="text-right col-span-2 lg:hidden lg:inline-block relative">
                 <button id="burger-menu" class="text-black focus:outline-none">
                     <svg class="h-6 w-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -57,8 +63,8 @@
 
 
             <div id="mobile-menu"
-                class="lg:hidden hidden bg-CDC8E1 text-black fixed w-full h-screen top-12 left-0 overflow-hidden">
-                <div class="p-4">
+                class="lg:hidden hidden text-black fixed w-full h-screen top-12 left-0 overflow-hidden" style="z-index: -1;">
+                <div class="p-4 mt-8 ml-5">
                     <a href="#" class="block mb-4">Accueil</a>
                     <a href="#" class="block mb-4">Evènements</a>
                     <a href="#" class="block mb-4">Rejoindre la communauté</a>

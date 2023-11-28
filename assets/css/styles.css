@@ -5,3 +5,12 @@
 img.w-2\/3.mx-auto.custom-image.rounded-lg.mr-4 {
     MARGIN-TOP: -4rem;
 }
+
+#mobile-menu {
+    background-color: #CDC8E1;
+}
+
+
+nav.text-white.p-4.fixed.w-full {
+    background-color: #CDC8E1;
+}
