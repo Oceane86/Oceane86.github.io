@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIAL</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="..." crossorigin="anonymous">
+    integrity="..." crossorigin="anonymous">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    
 
 </head>
 
-<body class="bg-gray-100">
+    
+<body class="bg-white">
 
     <!-- Navbar -->
-    <nav class="text-white p-4 fixed w-full">
+    <nav class="text-white p-4 w-full shadow-lg shadow-indigo-500/40" style="z-index: 2;">
         <div class="container mx-auto grid grid-cols-3 items-center">
 
             <!-- Logo -->
@@ -25,7 +28,7 @@
             <div class="text-lg font-bold col-span-1">
                 <a href="#" class="inline-block lg:hidden">
                     <figure>
-                        <img src="assets/medias/rial_logo.png" alt="Company Logo" class="w-17 h-16">
+                        <img src="assets/medias/rial_logo.png" alt="RIAL Logo" class="w-17 h-16">
                     </figure>
                 </a>
             </div>
@@ -33,19 +36,16 @@
 
 
             <!-- Menu (visible sur les écrans larges) -->
-            <div class="hidden lg:grid lg:grid-cols-7 gap-4 col-span-7">
-
-
-                <a href="#" class="text-black p-4 bg-F1F0F8">Evènements</a>
-                <a href="#" class="text-black p-4 bg-F1F0F8">Articles</a>
-                <a href="#" class="text-black p-4 bg-F1F0F8">Témoignages</a>
+            <div class="hidden lg:grid lg:grid-cols-7 gap-4 col-span-7 desktop-menu text-sm">
                 <figure class="grid place-items-center">
-                    <img src="assets/medias/rial_logo.png" alt="Company Logo">
-                    <a href="#"></a>
+                    <img src="assets/medias/rial_logo.png" alt="RIAL Logo">
                 </figure>
-                <a href="#" class="text-black p-4 bg-F1F0F8">Podcasts</a>
-                <a href="#" class="text-black p-4 bg-F1F0F8">Communauté</a>
-                <a href="#" class="text-black p-4 bg-F1F0F8">Devenir bénévole</a>
+                <a href="#" class="text-black p-4 bg-F1F0F8 ">ÉVÉNEMENTS</a>
+                <a href="#" class="text-black p-4 bg-F1F0F8">ARTICLES</a>
+                <a href="#" class="text-black p-4 bg-F1F0F8">TÉMOIGNAGES</a> 
+                <a href="#" class="text-black p-4 bg-F1F0F8">PODCAST</a>
+                <a href="#" class="text-black p-4 bg-F1F0F8">DEVENIR BENEVOLE</a>
+                <button class="bg-black rounded-3xl py-2 px-4"> Découvrir mon niveau</button>
             </div>
 
 
@@ -63,17 +63,17 @@
 
 
             <div id="mobile-menu"
-                class="lg:hidden hidden bg-CDC8E1 text-black fixed w-full h-screen top-12 left-0 overflow-hidden" style="z-index: -1;">
-                <div class="p-4 mt-8 ml-6">
-                    <a href="#" class="block mb-4">Accueil</a>
-                    <a href="#" class="block mb-4">Evènements</a>
-                    <a href="#" class="block mb-4">Rejoindre la communauté</a>
-                    <a href="#" class="block mb-4">Articles</a>
-                    <a href="#" class="block mb-4">Témoignages</a>
-                    <a href="#" class="block mb-4">Podcasts</a>
-                    <a href="#" class="block mb-4">Devenir bénévole</a>
+                class="lg:hidden hidden bg-CDC8E1 text-black fixed w-full h-screen top-0 left-0 overflow-hidden" style="z-index: -1;">
+                <div class="p-4 mt-20 ml-8">
+                    <a href="#" class="block pb-6">ÉVÉNEMENTS</a>
+                    <a href="#" class="block pb-6">ARTICLES</a>
+                    <a href="#" class="block pb-6">TÉMOIGNAGES</a>
+                    <a href="#" class="block pb-6">PODCAST</a>
+                    <button class="bg-black text-white rounded-3xl py-2 px-4"> Découvrir mon niveau</button>
+                    
+
                     <div class="container mx-auto text-right">
-                        <img src="assets/medias/Marni_4.png" alt="Description of the image"
+                        <img src="assets/medias/Marni_4.png" alt="rial personnage decouvrir"
                             class="w-2/3 mx-auto custom-image rounded-lg mr-4">
                     </div>
                 </div>
@@ -81,21 +81,396 @@
 
             </div>
     </nav>
+   
+    <section class="text-center block relative" style="z-index: -7;">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-12">Plonge dans l'aventure de l'IA émotionnelle !</h1>
+        <div class="grid grid-cols-1 gap-4" >
+            <div class="p-4">
+                <!-- Your video code goes here -->
+                <video class="w-full lg:w-2/3 mx-auto mt-4" controls>
+                    <source src="votre_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="p-4 text-center">
+                <p class="w-2/3 mx-auto mt-4"> Laisse les émotions virtuelles être le guide de ton expérience ludique extraordinaire !</p>
+                <button class="w-2/4 p-4 mx-auto mt-4 rounded-full">Découvrir mon niveau</button>
+            </div>
+            
+        </div>
+    </section>
 
 
+    <!-- Carousel 1 -->
 
-    <!-- Your Content Goes Here -->
+    <div class="carrousel1 relative bg-white border-t-9 border-solid border-white shadow-lg overflow-hidden rounded-t-lg">
 
-    <script>
-        document.getElementById('burger-menu').addEventListener('click', function () {
-            var mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-            var menuIcon = document.querySelector('.menu-icon');
-            menuIcon.innerHTML = (mobileMenu.classList.contains('hidden')) ?
-                '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>' :
-                '<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
-        });
-    </script>
+        <section class="mb-32 text-center mb-32 text-center md:w-2/3 md:ml-60">
+            <h2 class="mb-6 text-xl md:text-5xl lg:text-xl font-bold mb-4 p-4 mt-12">Rejoignez-nous pour un accompagnement humain</h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl mb-4 p-4">Nous organisons des événements offrant un soutien humain personnalisé pour accompagner les individus dépendants à l'IA, créant ainsi des expériences enrichissantes et inclusives.</p>
+
+            <div id="testimonials" class="relative">
+               
+                <!-- Slid 1 -->
+                <div class="testimonial active">
+                    <img class="mx-auto mb-6 rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                        src="assets/medias/Rectangle_761.png" alt="avatar" />
+                    <div class="mx-auto w-full max-w-[900px]">
+                        <h5 class="mb-2 text-lg font-bold">CONFÉRENCE IA</h5>
+                        <p class="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
+                            “ La science a t-elle fait des progrès ... “
+                        </p>
+                        <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+                            19/12/2023
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slid 2 -->
+                <div class="testimonial">
+                    <img class="mx-auto mb-6 rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    src="assets/medias/Rectangle_781.png" alt="avatar" />
+                <div class="mx-auto w-full max-w-[900px]">
+                    <h5 class="mb-2 text-lg font-bold">CONFÉRENCE IA </h5>
+                    <p class="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
+                        “ Quels sont les meilleures dispositif ... “   
+                    </p>
+                    <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+                        02/12/2023
+                    </p>
+                </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="testimonial">
+                    <img class="mx-auto mb-6 rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    src="assets/medias/Rectangle_756.png" alt="avatar" />
+                <div class="mx-auto w-full max-w-[900px]">
+                    <h5 class="mb-2 text-lg font-bold">CONFÉRENCE IA </h5>
+                    <p class="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
+                        “ La science a t-elle fait des progrès ... “
+                    </p>
+                    <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+                        19/12/2023
+                    </p>
+                </div>
+                </div>
+
+                <!-- Boutons -->
+                <button onclick="changeSlide(-1)"
+                    class="absolute top-0 bottom-0 left-0  z-[1] w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button">
+                    <!-- Previous button content goes here -->
+                    <span class="inline-block h-8 w-8">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                            class="text-neutral-600 dark:text-neutral-300">
+                            <path fill="currentColor"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                    </span>
+                    <span
+                        class="hidden !absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                </button>
+                <button onclick="changeSlide(1)"
+                    class="absolute top-0 bottom-0 right-0 z-[1] w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button">
+                    <!-- Next button content goes here -->
+                    <span class="inline-block h-8 w-8">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                            class="text-neutral-600 dark:text-neutral-300">
+                            <path fill="currentColor"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    <span
+                        class="hidden !absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                </button>
+            </div>
+            <button id="event" class="w-2/4 p-4 bg-white mx-auto mt-4 ml-5 rounded-full mb-4">Découvrir nos évènements</button>
+        </div>
+        </section>
+    </div>
+
+    <!-- Carrousel2 : témoignage -->
+
+    <section class="mx-auto" id="temoin">
+
+        <div class="carousel grid grid-cols-1 md:grid-cols-1 gap-4">
+    
+            <div class="slideshow-container col-span-3 md:col-span-2 mx-auto bg-white p-8 pt-10 rounded-xl mt-8 mb-6">
+        
+                <div class="mySlides01 fade w-full md:max-w-2xl md:w-170 mx-auto p-4 mt-4">
+                    <div class="text"><br>
+                        <h2 class="text-2xl font-bold mb-4">Bonjour !</h2>
+                        <p>J'ai tenté de commencer le mois sans tabac 3 semaines à l'avance pour prendre de l'avance, j'ai repris un peu avant le mois sans tabac mais j'ai pu faire une pause donc et arrêter progressivement, deux jours avant le mois j'ai ré arrêté, en fin de première semaine du mois sans tabac j'ai dû reprendre un peu mais aujourd'hui le</p>
+                        <p><ins>Lire la suite</ins></p>
+                        <h3><b>JAMILA, 27 ans </b></h3>
+                        <p><i> Étudiante en architecture </i></p>
+                    </div>
+                </div>
+        
+                <div class="mySlides01 fade w-full md:max-w-2xl md:w-80 mx-auto p-4">
+                    <div class="text">
+                        <h2 class="text-2xl font-bold mb-4">Text for Slide 2</h2>
+                        <p>Your text content here...</p>
+                    </div>
+                </div>
+        
+                <!-- Add more slides with text content -->
+        
+                <a class="prev" onclick="plusSlides01(-1)">
+                    <span></span>
+                </a>
+        
+                <a class="next" onclick="plusSlides01(1)">
+                    <span></span>
+                </a>
+
+                <div class="col-span-3 md:col-span-2 text-center">
+        
+                    <span class="dot dot01" onclick="currentSlide01(1)"></span> 
+            
+                    <span class="dot dot01" onclick="currentSlide01(2)"></span> 
+            
+                    <span class="dot dot01" onclick="currentSlide01(3)"></span> 
+            
+                    <span class="dot dot01" onclick="currentSlide01(4)"></span>
+            
+                    <span class="dot dot01" onclick="currentSlide01(5)"></span> 
+            
+                </div>
+        
+            </div>
+
+           <!-- Texte et bouton centrés -->
+            <div class="text-center mt-4 text-white">
+                <p class="text-white mb-6"><ins> Je témoigne</ins></p>
+                <button class="w-2/4 p-4 bg-white mx-auto mt-4 ml-5 rounded-full mb-4">Voir tous les témoignages</button>
+            </div>
+
+            
+           
+        </div>
+            
+            
+        </section>
+       
+        <div class="absolute z-1 -mt-50 md:-mt-32">
+            <figure>
+                <img class="w-1/3 md:w-1/4" src="assets/medias/Marni_5.png" alt="bonhmme rial" />
+            </figure>
+        </div>
+
+        <section class="benevole">
+            
+            <div class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:items-start">
+
+                <!-- Image à gauche (colonne 1) -->
+                <div class="md:order-1 md:ml-13 text-center">
+                    <img src="assets/medias/Group_2181.png" alt="Description de l'image" class="w-md h-auto md:h-full object-cover">
+                </div>
+        
+                <!-- Texte et bouton à droite (colonne 2) -->
+                <div class="md:order-2 text-center md:text-left md:mt-8">
+
+                    <p class="text-gray-700 mb-4">Tu veux partager ton expérience ? Découvrir notre communauté ? Alors rejoins nous vite nous recherchons des bénévoles pour aider les autres ! </p>
+                    <button class="bg-black text-white py-2 px-4 rounded">Je veux devenir bénévole ! </button>
+                </div>
+
+              
+    
+        
+            </div>
+        </section>
+
+
+         <!-- Carrousel2 : témoignage -->
+
+    <section class="mx-auto" id="article">
+
+        <div class="carousel grid grid-cols-1 md:grid-cols-1 gap-4">
+    
+            <div class="slideshow-container col-span-3 md:col-span-2 mx-auto bg-white p-8 pt-10 rounded-xl mt-8 mb-6">
+        
+                <div class="mySlides02 fade w-full md:max-w-2xl md:w-170 mx-auto p-4 mt-10">
+                    <figure>
+                        <img src="assets/medias/Rectangle_750.png" alt="article">
+                    </figure>
+                    <div class="text">
+                        <h2 class="text-2xl font-bold mb-4">Que fait l’IA dans la vie quotidienne ? </h2>
+                        <p>Aujourd'hui, l'intelligence artificielle fait partie intégrante de nos vies, mais comment cela affecte-t-il nos émotions ? </p>
+                    </div>
+                </div>
+        
+        
+                <!-- Add more slides with text content -->
+        
+                <a class="prev" onclick="plusSlides02(-1)">
+                    <span></span>
+                </a>
+        
+                <a class="next" onclick="plusSlides02(1)">
+                    <span></span>
+                </a>
+
+                <div class="col-span-3 md:col-span-2 text-center">
+        
+                    <span class="dot dot01" onclick="currentSlide02(1)"></span> 
+            
+                </div>
+        
+            </div>
+
+           <!-- Texte et bouton centrés -->
+            <div class="text-center mt-4 text-white">
+                <button class="w-1/4 p-4 bg-white mx-auto rounded-xl mb-4 text-black">Voir nos articles</button>
+            </div>
+
+            
+           
+        </div>
+       
+            
+        </section>
+        <div class="absolute z-1 -mt-50 md:-mt-32">
+            <figure>
+                <img class="w-1/3 md:w-1/4" src="assets/medias/Ikbal_5.png" alt="image article" />
+            </figure>
+        </div>
+
+
+        <section id="note" class="grid gap-4 place-items-center mt-20 mb-12">
+            <h2>RECOMMANDEZ NOTRE DISPOSITIF</h2>
+            
+            <div class="stars grid gap-1 grid-flow-col items-center">
+                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <!-- Répétez les étoiles nécessaires -->
+                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+          
+            </div>
+            
+            <button class="button bg-black text-white px-4 py-2 rounded-full w-40 text-xs">Envoyer</button>
+        </section>
+
+        
+    <section class="bg-black">
+        
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 grid-container">
+            <!-- Colonne 1 -->
+            <div class="text-white p-4 rounded-md shadow-md text-center p-10">
+          
+              <i class="fa-brands fa-spotify text-4xl text-white block mx-auto mb-4"></i>
+              <p class="text-white p-10">Suivez nous sur Spotify afin d’écouter nos podcasts sur l’indépendance artificielle</p>
+              <div class="mt-4">
+                <button class="bg-white text-black px-4 py-2 rounded-full w-40 text-xs"><strong>Je découvre</strong></button>
+              </div>
+            </div>
+        
+            <!-- Colonne 2 -->
+            <div class="text-white p-4 rounded-md shadow-md text-center p-9">
+              <div class="mx-auto">
+                <iconify-icon class="text-4xl text-white mb-4" icon="fluent:star-arrow-right-start-20-regular"></iconify-icon>
+              </div>
+              <p class="text-white p-10">Suivez nous sur tout nes réseaux sociaux afin de pouvoir consulter notre actualité</p>
+              <div class="mt-4">
+                <button class="bg-white text-black px-4 py-2 rounded-full w-40 text-xs"><strong>Suivre</strong></button>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="container mx-auto py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 m-6">
+
+            <!-- Première colonne -->
+            <div>
+                <h3><strong> EN SAVOIR PLUS ?</strong></h3>
+               
+                <div class="mb-4">
+                    <input type="text" id="field1" name="field1" class="border-b-2 border-gray-200 w-80 py-2 px-4 leading-tight focus:outline-none focus:border-blue-500" placeholder="Prénom">
+
+                </div>
+            
+                <div class="mb-4">
+                    <input type="text" id="field2" name="field2" class="border-b-2 border-gray-200 w-80 py-2 px-4 leading-tight focus:outline-none focus:border-blue-500" placeholder="Email">
+
+                </div>
+
+                <button type="submit" class="bg-black text-white px-4 py-2 rounded-full w-80 text-xs"><strong> S'ABONNER</strong></button>
+
+                <div class="grid grid-cols-10 mb-2">
+
+                    <a href="#" class="text-black">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-black">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-black">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="text-black">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Deuxième colonne -->
+            <div>
+                <div class="md:order-1">
+                    <img src="assets/medias/avis_gg.png" alt="avos google" class="w-2/12 h-2/6 md:h-full object-cover">
+                    <a href="#" class="text-black text-xs"><ins><strong>Voir les avis</strong></ins></a>
+
+                </div>
+               
+                <div class="md:order-2 grid grid-cols-2 gap-4 max-w-sm mt-4">
+                    <img src="assets/medias/app.png" alt="app store telechargement" class="w-full h-auto md:h-full object-cover">
+                    <img src="assets/medias/google.png" alt="app google telechargement" class="w-full h-auto md:h-full object-cover">
+                </div>
+                
+                
+        
+            </div>
+
+            <!-- Troisième colonne -->
+            <div>
+                <h3><strong> INFORMATIONS </strong></h3>
+                <ul class="list-none">
+                    <li><a href="#" class="text-gray-800">Recherche</a></li>
+                    <li><a href="#" class="text-gray-800">À propos</a></li>
+                    <li><a href="#" class="text-gray-800">Contact</a></li>
+                    <li><a href="#" class="text-gray-800">CGV</a></li>
+                    <li><a href="#" class="text-gray-800">Mentions légales</a></li>
+                    <li><a href="#" class="text-gray-800">Confidentialité</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+        
+        
+
+
+   
+
+<script src="assets/js/script.js"></script>
+
+    
+   
 </body>
-
 </html>
